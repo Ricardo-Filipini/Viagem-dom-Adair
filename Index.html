@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infográfico Detalhado da Peregrinação: Rota da Fé na Europa Central</title>
+    <title>Pelos Caminhos da Fé: Uma Jornada Espiritual</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,314 +12,273 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f0f8ff;
         }
         .chart-container {
             position: relative;
             width: 100%;
-            max-width: 600px;
+            max-width: 400px;
             margin-left: auto;
             margin-right: auto;
-            height: 350px;
-            max-height: 400px;
+            height: 250px;
+            max-height: 300px;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 768px) {
             .chart-container {
                 height: 300px;
+                max-height: 350px;
             }
-        }
-        .timeline-item {
-            position: relative;
-            padding-bottom: 2rem;
-            padding-left: 2.5rem;
-            border-left: 2px solid #89CFF0;
-        }
-        .timeline-dot {
-            position: absolute;
-            left: -0.6rem;
-            top: 0;
-            height: 1rem;
-            width: 1rem;
-            border-radius: 50%;
-            background-color: #004AAD;
-            border: 2px solid #f0f8ff;
-        }
-        .city-card {
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
         }
     </style>
 </head>
-<body class="text-gray-800">
+<body class="bg-[#F0F8FF]">
+
     <div class="container mx-auto p-4 md:p-8">
+
         <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-black text-[#004AAD] uppercase">Infográfico da Peregrinação na Europa Central</h1>
-            <p class="text-lg text-gray-600 mt-2">Uma análise visual detalhada do roteiro, cidade por cidade, explorando a rica tapeçaria de fé, história e cultura.</p>
+            <h1 class="text-4xl md:text-6xl font-black text-[#00429d] tracking-tight">Pelos Caminhos da Fé</h1>
+            <p class="text-lg md:text-xl text-[#4771b2] mt-2">Uma Jornada Espiritual pela Alemanha, República Tcheca, Polônia e Áustria</p>
         </header>
 
-        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-center">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <p class="text-5xl font-black text-[#0094FF]">13</p>
-                <p class="text-lg font-bold mt-1">Dias de Jornada</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <p class="text-5xl font-black text-[#0094FF]">4</p>
-                <p class="text-lg font-bold mt-1">Nações</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <p class="text-5xl font-black text-[#0094FF]">7</p>
-                <p class="text-lg font-bold mt-1">Cidades Chave</p>
-            </div>
-             <div class="bg-white p-4 rounded-lg shadow-md">
-                <p class="text-5xl font-black text-[#0094FF]">10+</p>
-                <p class="text-lg font-bold mt-1">Locais Sagrados</p>
-            </div>
-        </section>
-
-        <div class="city-card">
-            <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-6">🇩🇪 Alemanha: O Início da Caminhada</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h3 class="font-bold text-xl mb-2">Frankfurt: Portal Histórico</h3>
-                    <p class="text-gray-600 mb-4">A jornada começa em Frankfurt, um centro financeiro moderno com uma alma antiga. Por séculos, sua Catedral de São Bartolomeu foi o local de coroação dos imperadores do Sacro Império Romano-Germânico, conectando poder terreno e divino.</p>
-                     <h3 class="font-bold text-xl mb-2">Vallendar: Berço de um Movimento Global</h3>
-                    <p class="text-gray-600">A pequena cidade de Vallendar guarda o Santuário Original de Schoenstatt. O que começou em 1914 como uma "Aliança de Amor" com Maria em uma modesta capela, floresceu em um movimento mundial que inspira milhões.</p>
+        <main>
+            <section id="overview" class="mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-center text-[#00429d] mb-6">O Roteiro da Peregrinação</h2>
+                    <div class="relative wrap overflow-hidden p-4 h-full">
+                        <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 bg-[#73a2c6] shadow-xl w-12 h-12 rounded-full">
+                                <h3 class="mx-auto font-bold text-lg text-white">1</h3>
+                            </div>
+                            <div class="order-1 bg-[#a6d3d8] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                                <h4 class="font-bold text-lg text-[#00429d]">Alemanha</h4>
+                                <p class="text-sm leading-snug tracking-wide text-[#4771b2]">Frankfurt & Vallendar: O berço do Movimento de Schoenstatt.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 bg-[#73a2c6] shadow-xl w-12 h-12 rounded-full">
+                                <h3 class="mx-auto text-white font-bold text-lg">2</h3>
+                            </div>
+                            <div class="order-1 bg-[#a6d3d8] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                                <h4 class="font-bold text-lg text-[#00429d]">República Tcheca</h4>
+                                <p class="text-sm leading-snug tracking-wide text-[#4771b2]">Praga: A cidade do Menino Jesus e das cem torres.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 bg-[#73a2c6] shadow-xl w-12 h-12 rounded-full">
+                                <h3 class="mx-auto font-bold text-lg text-white">3</h3>
+                            </div>
+                            <div class="order-1 bg-[#a6d3d8] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                                <h4 class="font-bold text-lg text-[#00429d]">Polônia</h4>
+                                <p class="text-sm leading-snug tracking-wide text-[#4771b2]">Cracóvia & Mais: Terra de santos e da Divina Misericórdia.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                             <div class="order-1 w-5/12"></div>
+                            <div class="z-20 flex items-center order-1 bg-[#73a2c6] shadow-xl w-12 h-12 rounded-full">
+                                <h3 class="mx-auto text-white font-bold text-lg">4</h3>
+                            </div>
+                            <div class="order-1 bg-[#a6d3d8] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                                <h4 class="font-bold text-lg text-[#00429d]">Áustria</h4>
+                                <p class="text-sm leading-snug tracking-wide text-[#4771b2]">Viena: A fé imperial e a grandiosidade dos Habsburgos.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3 class="text-lg font-bold text-center mb-2">Expansão Global dos Santuários de Schoenstatt</h3>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-[#00429d] mb-4 text-center">Movimento de Schoenstatt</h3>
+                    <p class="text-center text-[#4771b2] mb-4">Nascido em uma modesta capela em Vallendar, Alemanha, em 1914, o movimento se espalhou pelo mundo a partir de uma Aliança de Amor com Maria.</p>
                     <div class="chart-container">
                         <canvas id="schoenstattChart"></canvas>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="city-card">
-            <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-6">🇨🇿 República Tcheca: Tesouros de Praga</h2>
-             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h3 class="font-bold text-xl mb-2">Praga: A Cidade de Ouro</h3>
-                    <p class="text-gray-600 mb-4">Praga é um museu a céu aberto. O roteiro a pé pelo complexo do Castelo revela joias da fé como o Loreto, um centro de peregrinação barroco, e a monumental Catedral de São Vito, cuja construção atravessou 600 anos de história.</p>
-                    <div class="bg-[#89CFF0] p-4 rounded-lg text-center">
-                        <p class="text-5xl font-black text-[#004AAD]">✝️ Menino Jesus de Praga</p>
-                        <p class="mt-2 text-gray-800">A pequena imagem de cera de 47cm na Igreja de Nossa Senhora Vitoriosa é um dos ícones católicos mais venerados. Acredita-se que tenha protegido a cidade e concedido inúmeros milagres, especialmente a famílias e crianças.</p>
+                <div class="lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-[#00429d] mb-4 text-center">Polônia: Um Farol da Fé Católica</h3>
+                    <p class="text-center text-[#4771b2] mb-4">A identidade polonesa é profundamente moldada pelo catolicismo, sendo o país com a maior proporção de católicos nesta jornada. Essa fé deu ao mundo santos como João Paulo II e Santa Faustina.</p>
+                     <div class="chart-container max-w-2xl">
+                        <canvas id="catholicPopulationChart"></canvas>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-lg font-bold text-center mb-2">Comparativo dos Tesouros Arquitetônicos de Praga</h3>
-                     <div class="chart-container">
-                        <canvas id="pragueRadarChart"></canvas>
+
+                <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-[#00429d] mb-4 text-center">Tesouros da Fé em Praga e Viena</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="bg-[#a6d3d8] p-4 rounded-lg">
+                            <p class="text-5xl font-black text-white">👑</p>
+                            <p class="text-lg font-bold text-[#00429d] mt-2">Menino Jesus de Praga</p>
+                            <p class="text-sm text-[#4771b2]">Venerada mundialmente, a estátua do século XVII é um símbolo de proteção e fé na Igreja de Nossa Senhora Vitoriosa.</p>
+                        </div>
+                        <div class="bg-[#a6d3d8] p-4 rounded-lg">
+                            <p class="text-5xl font-black text-white">600</p>
+                            <p class="text-lg font-bold text-[#00429d] mt-2">Anos de Construção</p>
+                            <p class="text-sm text-[#4771b2]">A majestosa Catedral de São Vito, no Castelo de Praga, levou quase seis séculos para ser concluída.</p>
+                        </div>
+                        <div class="bg-[#a6d3d8] p-4 rounded-lg">
+                            <p class="text-5xl font-black text-white">230k</p>
+                            <p class="text-lg font-bold text-[#00429d] mt-2">Azulejos Coloridos</p>
+                            <p class="text-sm text-[#4771b2]">O icônico telhado da Catedral de Santo Estêvão, em Viena, exibe a águia dos Habsburgos com 230.000 azulejos.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                
+                <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                     <h3 class="text-xl font-bold text-[#00429d] mb-4 text-center">Heróis da Fé em Tempos Sombrios</h3>
+                     <p class="text-center text-[#4771b2] max-w-3xl mx-auto mb-6">A visita a Auschwitz-Birkenau é um momento de reflexão sobre a maldade humana, mas também sobre a luz da fé que brilhou na escuridão através de santos que ali foram martirizados, oferecendo suas vidas por amor.</p>
+                     <div class="flex flex-wrap justify-center gap-6">
+                        <div class="text-center p-4 border border-[#a6d3d8] rounded-lg max-w-xs">
+                            <h4 class="font-bold text-lg text-[#00429d]">São Maximiliano Kolbe</h4>
+                            <p class="text-sm text-[#4771b2]">O padre franciscano que voluntariamente tomou o lugar de um pai de família, condenado à morte por inanição.</p>
+                        </div>
+                        <div class="text-center p-4 border border-[#a6d3d8] rounded-lg max-w-xs">
+                            <h4 class="font-bold text-lg text-[#00429d]">Santa Teresa Benedita da Cruz</h4>
+                            <p class="text-sm text-[#4771b2]">Edith Stein, uma filósofa judia que se converteu e se tornou freira carmelita, martirizada por sua fé e origem.</p>
+                        </div>
+                     </div>
+                </div>
 
-        <div class="city-card">
-            <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-6">🇵🇱 Polônia: No Coração da Fé do Século XX</h2>
-            <div class="space-y-8">
-                <div>
-                    <h3 class="font-bold text-xl mb-2">Cracóvia: Capital da Divina Misericórdia</h3>
-                    <p class="text-gray-600 mb-4">Cracóvia é o epicentro espiritual da viagem, lar da devoção à Divina Misericórdia revelada a Santa Faustina. O Santuário atrai milhões, sendo um dos maiores centros de peregrinação da Europa.</p>
-                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-[#00429d] mb-4 text-center">Uma Peregrinação Culinária</h3>
+                    <p class="text-center text-[#4771b2] mb-6">Saboreie a cultura local através de seus pratos típicos, uma parte deliciosa da experiência de cada país.</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                         <div>
-                            <h3 class="text-lg font-bold text-center mb-2">Estimativa de Peregrinos Anuais</h3>
-                            <div class="chart-container" style="height: 300px;">
-                                <canvas id="pilgrimsChart"></canvas>
-                            </div>
+                            <p class="text-4xl">🇩🇪</p>
+                            <p class="font-bold mt-2 text-[#00429d]">Frankfurter</p>
+                            <p class="text-sm text-[#4771b2]">A salsicha clássica de Frankfurt.</p>
                         </div>
-                        <div class="bg-[#0094FF] text-white p-4 rounded-lg flex flex-col justify-center text-center">
-                            <p class="text-4xl font-black">"Jesus, eu confio em Vós"</p>
-                            <p class="mt-2 text-lg">A inscrição na imagem da Divina Misericórdia, pintada sob orientação de Santa Faustina, resume a mensagem central da devoção que se espalhou de Cracóvia para o mundo.</p>
+                        <div>
+                            <p class="text-4xl">🇨🇿</p>
+                            <p class="font-bold mt-2 text-[#00429d]">Trdelník</p>
+                            <p class="text-sm text-[#4771b2]">Massa doce assada em espeto.</p>
                         </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-xl mb-2">Auschwitz: Memorial do Sacrifício</h3>
-                     <p class="text-gray-600 mb-4">A visita a Auschwitz-Birkenau é um momento de profunda reflexão sobre a capacidade humana para o mal, mas também para o heroísmo da fé. É um local para honrar a memória de mais de 1.1 milhão de vítimas e o testemunho de santos mártires.</p>
-                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
-                        <div class="bg-gray-200 p-4 rounded-lg">
-                            <h4 class="font-bold">São Maximiliano Kolbe</h4>
-                            <p class="text-sm">Ofereceu sua vida para salvar um pai de família em 1941. Morreu na "cela da fome", tornando-se um mártir da caridade.</p>
+                        <div>
+                            <p class="text-4xl">🇵🇱</p>
+                            <p class="font-bold mt-2 text-[#00429d]">Pierogi</p>
+                            <p class="text-sm text-[#4771b2]">Pastéis cozidos com diversos recheios.</p>
                         </div>
-                         <div class="bg-gray-200 p-4 rounded-lg">
-                            <h4 class="font-bold">Santa Teresa Benedita da Cruz (Edith Stein)</h4>
-                            <p class="text-sm">Filósofa judia convertida ao catolicismo e freira carmelita. Morreu na câmara de gás em 1942, unindo sua fé e herança em seu martírio.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="font-bold text-xl mb-2">Wadowice: Onde Tudo Começou</h3>
-                     <p class="text-gray-600">Nesta pequena cidade nasceu Karol Wojtyła. A visita à sua casa e à igreja de seu batismo é um mergulho na infância e juventude do homem que se tornaria São João Paulo II, o "Papa Peregrino".</p>
-                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mt-4">
-                        <div class="bg-blue-100 p-4 rounded-lg">
-                            <p class="text-4xl font-black">26.5</p>
-                            <p class="font-bold">Anos de Pontificado</p>
-                        </div>
-                        <div class="bg-blue-100 p-4 rounded-lg">
-                            <p class="text-4xl font-black">104</p>
-                            <p class="font-bold">Viagens Internacionais</p>
-                        </div>
-                        <div class="bg-blue-100 p-4 rounded-lg">
-                            <p class="text-4xl font-black">🍰</p>
-                            <p class="font-bold">Kremówka Papal</p>
+                        <div>
+                            <p class="text-4xl">🇦🇹</p>
+                            <p class="font-bold mt-2 text-[#00429d]">Wiener Schnitzel</p>
+                            <p class="text-sm text-[#4771b2]">O famoso escalope de vitela empanado.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="city-card">
-            <h2 class="text-3xl font-bold text-center text-[#004AAD] mb-6">🇦🇹 Áustria: Esplendor e Fé em Viena</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                 <div>
-                    <h3 class="font-bold text-xl mb-2">Viena: Legado Imperial</h3>
-                    <p class="text-gray-600 mb-4">A viagem termina na majestosa Viena. A fé católica moldou o Império Habsburgo, e seu legado é visível em toda a cidade, especialmente na imponente Catedral de Santo Estêvão (Stephansdom), o coração espiritual de Viena.</p>
-                     <div class="bg-[#004AAD] text-white p-4 rounded-lg">
-                        <h4 class="font-bold text-center mb-2">Segredos da Stephansdom</h4>
-                         <ul class="list-disc list-inside space-y-1">
-                            <li><strong>Catacumbas:</strong> Guardam os restos de mais de 11.000 pessoas, incluindo imperadores e cardeais.</li>
-                            <li><strong>Ícone Maria Pötsch:</strong> Um ícone bizantino do século XVII que, segundo a tradição, chorou lágrimas verdadeiras.</li>
-                             <li><strong>Telhado de Águia:</strong> 230.000 azulejos formam a águia bicéfala, símbolo do Império Habsburgo.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div>
-                    <h3 class="text-lg font-bold text-center mb-2">Altura das Torres das Catedrais (metros)</h3>
-                    <div class="chart-container">
-                         <canvas id="towersChart"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </main>
 
-        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
-            <p class="text-gray-600">Este infográfico foi criado para ser uma recordação visual e informativa de uma jornada de fé inesquecível.</p>
+        <footer class="text-center mt-12">
+            <p class="text-[#4771b2]">Que esta jornada visual inspire e aprofunde a sua peregrinação. Boa viagem!</p>
         </footer>
+
     </div>
 
     <script>
         function wrapLabel(label) {
-            const maxLength = 16;
-            if (label.length <= maxLength) return label;
+            const max = 16;
+            if (label.length <= max) return label;
+            
             const words = label.split(' ');
             let lines = [];
             let currentLine = '';
-            for (const word of words) {
-                if ((currentLine + ' ' + word).trim().length > maxLength) {
+
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > max) {
                     lines.push(currentLine.trim());
                     currentLine = word;
                 } else {
                     currentLine = (currentLine + ' ' + word).trim();
                 }
-            }
-            if (currentLine) lines.push(currentLine.trim());
+            });
+            lines.push(currentLine.trim());
             return lines;
         }
 
-        const tooltipTitleCallback = (tooltipItems) => {
-            const item = tooltipItems[0];
-            let label = item.chart.data.labels[item.dataIndex];
-            return Array.isArray(label) ? label.join(' ') : label;
-        };
-        
-        const chartColors = {
-            blue1: '#004AAD', blue2: '#0094FF', blue3: '#89CFF0', blue4: '#B2FFFF'
-        };
-
-        const defaultChartOptions = {
-            maintainAspectRatio: false, responsive: true,
+        const tooltipTitleCallback = {
             plugins: {
-                legend: { position: 'bottom', labels: { color: '#374151' } },
-                tooltip: { callbacks: { title: tooltipTitleCallback } }
-            }
-        };
-
-        new Chart(document.getElementById('schoenstattChart').getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: ['América do Sul', 'Europa', 'América do Norte', 'Ásia', 'África'],
-                datasets: [{
-                    label: 'Número de Santuários (aprox.)',
-                    data: [80, 70, 20, 15, 10],
-                    backgroundColor: chartColors.blue3,
-                }]
-            },
-            options: { ...defaultChartOptions,
-                scales: {
-                    y: { beginAtZero: true, ticks: { color: '#374151' }, grid: { color: '#e5e7eb' } },
-                    x: { ticks: { color: '#374151' }, grid: { display: false } }
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
                 }
             }
-        });
-        
-        new Chart(document.getElementById('pragueRadarChart').getContext('2d'), {
-            type: 'radar',
+        };
+
+        const schoenstattCtx = document.getElementById('schoenstattChart').getContext('2d');
+        new Chart(schoenstattCtx, {
+            type: 'doughnut',
             data: {
-                labels: ['Idade (Séculos)', 'Importância Artística', 'Altura (Escala)', 'Tamanho (Escala)', 'Afluxo de Peregrinos'],
+                labels: ['Santuário Original', 'Santuários Réplica no Mundo'],
                 datasets: [{
-                    label: 'Catedral de São Vito',
-                    data: [10, 10, 9, 10, 8],
-                    backgroundColor: 'rgba(0, 74, 173, 0.2)',
-                    borderColor: chartColors.blue1,
-                    pointBackgroundColor: chartColors.blue1
-                }, {
-                    label: 'Igreja de São Nicolau',
-                    data: [8, 9, 7, 7, 6],
-                    backgroundColor: 'rgba(0, 148, 255, 0.2)',
-                    borderColor: chartColors.blue2,
-                    pointBackgroundColor: chartColors.blue2
+                    label: 'Santuários de Schoenstatt',
+                    data: [1, 200],
+                    backgroundColor: [
+                        '#00429d',
+                        '#73a2c6',
+                    ],
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2
                 }]
             },
-            options: { ...defaultChartOptions,
-                scales: {
-                    r: {
-                        angleLines: { color: '#e5e7eb' },
-                        grid: { color: '#e5e7eb' },
-                        pointLabels: { font: { size: 10 } },
-                        ticks: { backdropColor: 'transparent', color: '#374151' }
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    },
+                    title: {
+                        display: false
                     }
                 }
             }
         });
 
-        new Chart(document.getElementById('pilgrimsChart').getContext('2d'), {
+        const catholicPopulationCtx = document.getElementById('catholicPopulationChart').getContext('2d');
+        const originalLabels = ['Polônia', 'Áustria', 'República Tcheca', 'Alemanha'];
+        const processedLabels = originalLabels.map(wrapLabel);
+
+        new Chart(catholicPopulationCtx, {
             type: 'bar',
             data: {
-                labels: [wrapLabel('Santuário da Divina Misericórdia'), wrapLabel('Menino Jesus de Praga')],
+                labels: processedLabels,
                 datasets: [{
-                    label: 'Peregrinos por ano (em milhões)',
-                    data: [2, 1],
-                    backgroundColor: [chartColors.blue2, chartColors.blue3]
+                    label: '% da População Católica (Aprox.)',
+                    data: [85, 74, 10, 50],
+                    backgroundColor: '#4771b2',
+                    borderColor: '#00429d',
+                    borderWidth: 1
                 }]
             },
-            options: { ...defaultChartOptions,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
                 indexAxis: 'y',
                 scales: {
-                    y: { ticks: { color: '#374151' }, grid: { display: false } },
-                    x: { ticks: { color: '#374151' }, grid: { color: '#e5e7eb' } }
-                }
-            }
-        });
-        
-        new Chart(document.getElementById('towersChart').getContext('2d'), {
-            type: 'bar',
-            data: {
-                labels: [wrapLabel('Catedral de Santo Estêvão (Viena)'), wrapLabel('Catedral de São Vito (Praga)')],
-                datasets: [{
-                    label: 'Altura da Torre Principal (m)',
-                    data: [136.7, 96.5],
-                    backgroundColor: [chartColors.blue1, chartColors.blue3]
-                }]
-            },
-            options: { ...defaultChartOptions,
-                scales: {
-                    y: { beginAtZero: true, ticks: { color: '#374151' }, grid: { color: '#e5e7eb' } },
-                    x: { ticks: { color: '#374151' }, grid: { display: false } }
+                    x: {
+                        beginAtZero: true,
+                        max: 100
+                    }
+                },
+                plugins: {
+                     ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
                 }
             }
         });
